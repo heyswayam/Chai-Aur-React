@@ -47,10 +47,10 @@ function App() {
               Copy
             </button>
           </div>
-          <div className='flex flex-col justify-between w-full mt-3   p-2 rounded-sm '>
-            <div className='flex flex-col md:flex-row'>
-              <input ref={rangeValue} type="range" className='w-full' name="" id="rangeLength" defaultValue={8} min={6} max={20} onChange={(e) => setLength(e.target.value)} />
-              <label htmlFor="rangeLength" className='w-3/12 text-center'>length: {length} </label>
+          <div className='flex flex-col justify-between w-full mt-3 py-2 rounded-sm'>
+            <div className='flex flex-col justify-between md:flex-row mb-3'>
+              <input ref={rangeValue} type="range" className='w-10/12' name="" id="rangeLength" defaultValue={8} min={6} max={20} onChange={(e) => setLength(e.target.value)} />
+              <label htmlFor="rangeLength" className=' w-20 md:text-center'>Length: {length} </label>
             </div>
             <div className='flex'>
               <input type="checkbox" name="" id="numberInput" onClick={() => { setallowNum(prev => !prev) }} />
