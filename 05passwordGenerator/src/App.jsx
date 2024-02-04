@@ -34,16 +34,16 @@ function App() {
   }, [length, allowChar, allowNum])
   return (
     <>
-      <div className="bg-black w-full h-full flex ">
+      <div className="bg-gradient-to-r from-blue-500 to-purple-500 w-full h-full flex ">
 
-        <div className="w-9/12 md:w-5/12 h-fit flex flex-col  mx-auto shadow-md rounded-lg px-4 py-5 mt-5  bg-gray-500 text-white">
-          <h1 className='text-white text-center my-3'>Password generator</h1>
+        <div className="w-9/12 md:w-5/12 h-fit flex flex-col  mx-auto shadow-md rounded-lg px-4 py-5 mt-32  bg-gray-500/30 text-white">
+          <h1 className='text-white text-center my-3 font-mono'>Password Generator</h1>
           <div className="flex text-gray-500">
             <textarea ref={passwordReference} className='p-2 rounded-md w-full' name="" placeholder='password' id="" rows="1" readOnly value={password}> </textarea>
             <button
               type="button"
               onClick={copyClipBoard}
-              className="rounded-md bg-blue-600 ml-4 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-600/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
+              className="rounded-md bg-blue-600/70 ml-4 px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black">
               Copy
             </button>
           </div>
