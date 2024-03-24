@@ -27,3 +27,4 @@ stop.addEventListener("click", () => {
   clearInterval(colorInterval);
   colorInterval = null;
 });
+

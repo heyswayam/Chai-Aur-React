@@ -41,3 +41,7 @@ chai
   });
 
 console.log("chai");
+console.log(chai);
+
+
+
