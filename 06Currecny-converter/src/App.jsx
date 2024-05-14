@@ -7,7 +7,8 @@ function App() {
 	const [from, setFrom] = useState("usd");
 	const [to, setTo] = useState("inr");
 	// const currencyInfo = useCurrencyInfo(from,to,amount);
-	const options = ["inr", "usd", "eng"]
+	const options = ["USD", "EUR", "JPY", "GBP", "AUD", "CAD", "CHF", "CNY", "SEK", "NZD", "MXN", "SGD", "HKD", "NOK", "KRW", "TRY", "INR", "RUB", "BRL", "ZAR", "DKK", "PLN", "THB", "IDR", "HUF", "CZK", "ILS", "CLP", "PHP", "AED", "MYR", "SAR", "RON", "COP", "ARS", "TWD", "HRK", "DOP", "UAH", "EGP", "VND", "IQD", "KWD", "QAR", "BDT", "OMR", "LKR", "NGN", "PKR", "BDT", "OMR", "LKR", "NGN", "PKR"];
+
 
 	// const convert = () => {
 	// 	setConvertedAmount(useCurrencyInfo(from, to, amount));
