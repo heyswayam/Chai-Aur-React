@@ -13,7 +13,7 @@ function App() {
 
 	return (
 		<>
-    <ThemeProvider value={{theme, setTheme, lightMode, darkMode}}>
+    {/* <ThemeProvider value={{theme, setTheme, lightMode, darkMode}}> */}
 			<div className='flex flex-wrap min-h-screen items-center'>
 				<div className='md:w-2/6 sm:w-4/6 mx-auto'>
 					<div className=' max-w-sm mx-auto flex justify-end mb-4'></div>
@@ -22,7 +22,7 @@ function App() {
 					<div className='w-full max-w-sm mx-auto'></div>
 				</div>
 			</div>
-      </ThemeProvider>
+      {/* </ThemeProvider> */}
 		</>
 	);
 }

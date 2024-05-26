@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react'
-import useTheme from '../context/themeContext';
+import React, { useState,useEffect } from 'react'
+// import useTheme from '../context/themeContext';
 
 export default function ThemeBtn() {
-    const {theme,setTheme,darkMode,lightMode} = useTheme()
+    // const {theme,setTheme,darkMode,lightMode} = useTheme()
+    const [theme, setTheme] = useState("light")
+    const lightMode = ()=>{setTheme("light")}
+    const darkMode = ()=>{setTheme("dark")}
     const handleClick = (e) => {
-        const darkModeStatus = e.target.checked ? "dark" : "light"
+        const darkModeStatus = e.target.checked ? "light" : "dark"
         setTheme(darkModeStatus)
-        // console.log(theme);
-        if (darkModeStatus) {
+        console.log(theme);
+        if (darkModeStatus==="light") {
             darkMode()
         } else {
             lightMode()
